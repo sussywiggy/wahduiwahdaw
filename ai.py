@@ -1,6 +1,9 @@
 import cv2
 
-image = cv2.imread('miloryangosling.jpg')
+video = cv2.VideoCapture('babyryan.mp4')
+
+while(video.isOpened()):
+    ret,frame=video.read()
 
 gray_image = cv2.cvtColor(image,cv2.COLOR_BGR2GRAY)
 
